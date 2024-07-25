@@ -1,0 +1,9 @@
+/venv
+/dump
+
+test*.*
+test_govna.py
+wallets*.*
+/temp
+logs.json
+TODO

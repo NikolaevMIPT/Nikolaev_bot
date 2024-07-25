@@ -11,16 +11,16 @@ services:
     volumes:
       - postgres_data_back:/var/lib/postgresql/data
     ports:
-      - "5434:5432"
-  etherbot:
-    container_name: etherbot
-    build: .
-    restart: always
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_HOSTS=pg:5400
+      - "4000:5432"
+#   etherbot:
+#     container_name: etherbot
+#     build: .
+#     restart: always
+#     environment:
+#       - POSTGRES_DB=postgres
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=postgres
+#       - POSTGRES_HOSTS=pg:4000
 volumes:
   postgres_data_back:
     driver: local
